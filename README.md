@@ -76,8 +76,10 @@ With this project, you can control your lamp directly from a **smartphone or PC 
 
 ---
 
-## 🎥 Project Demo Video
-[![Watch the video](https://img.youtube.com/vi/[https://youtu.be/jlRyVyKFLNQ](https://youtu.be/jlRyVyKFLNQ?si=dJ3GdBTtMT3sKLsC)/maxresdefault.jpg)](https://www.youtube.com/watch?v=[https://youtu.be/jlRyVyKFLNQ](https://youtu.be/jlRyVyKFLNQ?si=dJ3GdBTtMT3sKLsC)
+## 🎥 Project Demo Video  
+
+[![Watch the video](https://img.youtube.com/vi/jlRyVyKFLNQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=jlRyVyKFLNQ)
+
 
 
 ---
