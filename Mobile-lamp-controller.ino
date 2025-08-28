@@ -1,12 +1,3 @@
-/*
-  Rui Santos & Sara Santos - Random Nerd Tutorials
-  Complete project details
-   - Arduino IDE: https://RandomNerdTutorials.com/esp8266-nodemcu-ota-over-the-air-arduino/
-   - VS Code: https://RandomNerdTutorials.com/esp8266-nodemcu-ota-over-the-air-vs-code/
-     
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // Import required libraries
 #include <Arduino.h>
@@ -16,8 +7,8 @@
 #include <AsyncElegantOTA.h>
 
 // Replace with your network credentials
-const char* ssid = "AHMED";
-const char* password = "88888888";
+const char* ssid = "Write Your ssid here (the name of your wifi network)";
+const char* password = "Write the passowrd here";
 
 bool ledState = 0;
 const int ledPin = 2;
@@ -26,6 +17,8 @@ const int ledPin = 2;
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
 
+
+//============================ HTML & CSS =================================//
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
 <head>
@@ -97,6 +90,8 @@ const char index_html[] PROGMEM = R"rawliteral(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:,">
 </head>
+
+
 <body>
   <div class="topnav">
     <h1>ESP WebSocket Server</h1>
@@ -108,6 +103,8 @@ const char index_html[] PROGMEM = R"rawliteral(
       <p><button id="button" class="button">Toggle</button></p>
     </div>
   </div>
+
+//========================= JS ==========================//
 <script>
   var gateway = `ws://${window.location.hostname}/ws`;
   var websocket;
@@ -147,9 +144,14 @@ const char index_html[] PROGMEM = R"rawliteral(
     websocket.send('toggle');
   }
 </script>
+
+
 </body>
 </html>)rawliteral";
 
+
+
+//============================= C++ ================================//
 void notifyClients() {
   ws.textAll(String(ledState));
 }
