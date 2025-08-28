@@ -1,6 +1,4 @@
-Here’s a **complete and professional GitHub project description** with your author credit at the end:
 
----
 
 #  ESP8266 Smart Home Lamp Control (WebSocket + OTA)
 
@@ -26,8 +24,8 @@ With this project, you can control your lamp directly from a **smartphone or PC 
 
 ## Technologies Used
 
-* **ESP8266 Wi-Fi Module** (NodeMCU / Wemos D1 Mini, etc.)
-* **C++ / Arduino Framework**
+* **ESP8266 Wi-Fi Module** (NodeMCU)
+* **C++ / Arduino IDE Framework**
 * **HTML + CSS + JavaScript** (for the web interface)
 * **AsyncWebServer & WebSocket libraries**
 * **AsyncElegantOTA** for OTA updates
